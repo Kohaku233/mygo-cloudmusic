@@ -195,6 +195,7 @@ func Run() error {
 			BackgroundColor:      "light-dark(#ffffff, #141416)",
 			Content:              ui.View(a.view),
 		})
+		plainCaption(a.win.NativeHandle())
 		a.setMenu()
 		a.boot()
 		// The notch player is macOS's, over its menu bar: elsewhere it would
